@@ -1,0 +1,60 @@
+.eec {
+    position: relative;
+    margin: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eec .eec-box {
+    width: 30%;
+}
+.eec .eec-box h3 {
+    margin: 3rem 0 1rem 0;
+}
+.eec .eec-box .eec-cards .eec-card {
+    background-color: var(--color-brand-dark);
+}
+.eec .eec-box .eec-cards div {
+    border-radius: 5px;
+}
+.eec .eec-box .eec-cards .eec-card .eec-period {
+    padding: 0.3rem 0 0.3rem 3rem;
+    font-size: 1.2rem;
+}
+.eec .eec-box .eec-cards .eec-card .eec-period,
+.eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-2 {
+    background-color: var(--color-body);
+    color: var(--color-brand);
+}
+.eec .eec-box .eec-cards .eec-card .eec-detail {
+    background-color: var(--color-brand-dark);
+    position: relative;
+    cursor: pointer;
+    margin: 0.2rem 0;
+    overflow: auto;
+}
+.eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-1 {
+    padding: 3rem;
+    line-height: 3rem;
+}
+.eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-1 h4 {
+    font-family: var(--ff-title);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-1 p {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-2 {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    min-height: 12rem;
+    padding: 1rem 3rem;
+    opacity: 0;    
+    transition: all 0.5s;
+}
+.eec .eec-box .eec-cards .eec-card .eec-detail:hover .eec-detail-2 {
+    opacity: 1;
+}

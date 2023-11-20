@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--color-brand);
+    color: var(--color-body);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: 400;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--color-body);
+}
+h1 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-section-title);
+    font-weight: 200;
+    color: var(--color-light); 
+    text-align: center;
+}
+h2 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-big-title);
+    font-weight: 400;
+    color: var(--color-body);
+    text-transform: uppercase;
+} 
+h2.title {
+    margin-left: 2rem;
+}
+h2 span.subtitle {
+    font-family: var(--ff-body);
+    font-size: var(--fs-big-subtitle);
+    font-weight: 300;
+    color: var(--color-dark);
+}
+h2.title::after {
+    content: "";
+    background-color: var(--color-dark);
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    margin-top: 2.7rem;
+    margin-left: 1rem;
+}
+h3 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-title);
+    font-weight: 400;
+    color: var(--color-body);
+}
+br {
+    display: none;
+}
+main {
+    position: relative;
+    overflow: hidden;
+}
+.py-10 {
+    padding: 10rem 0;
+}
+.pt-7 {
+    padding-top: 7rem;
+}

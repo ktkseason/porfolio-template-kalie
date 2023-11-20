@@ -1,0 +1,154 @@
+.portfolio ul {
+    margin-bottom: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.portfolio ul li {
+    background-color: var(--color-brand);
+    border: 1px solid var(--color-body);
+    border-radius: 5px;
+    width: 8vw;
+    height: 3.5rem;
+    line-height: 3.2rem;
+    margin-right: 1rem;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.portfolio ul li label {
+    display: block;
+    cursor: pointer;
+}
+.portfolio ul li:last-child {
+    margin-right: 0;
+}
+.portfolio ul li:hover,
+#portfolio-cat-1:checked ~ .portfolio-cat li:nth-child(1),
+#portfolio-cat-2:checked ~ .portfolio-cat li:nth-child(2),
+#portfolio-cat-3:checked ~ .portfolio-cat li:nth-child(3),
+#portfolio-cat-4:checked ~ .portfolio-cat li:nth-child(4),
+#portfolio-cat-5:checked ~ .portfolio-cat li:nth-child(5) {
+    background-color: var(--color-body);
+    color: var(--color-brand);
+    font-weight: 700;
+}
+
+
+/* Flex */
+/* .portfolio .portfolio-box {
+    padding: 0 0 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.portfolio .portfolio-box .portfolio-card {
+    position: relative;
+    flex: 1 1 200px;
+    height: 25vh;
+    margin: 0 1rem 3rem 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: none;
+} */
+
+/* Grid */
+.portfolio .portfolio-box {
+    padding: 0 0 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 25vh;
+}
+.portfolio .portfolio-box .portfolio-card {
+    position: relative;
+    margin: 0 1rem 1rem 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: none;
+}
+
+.portfolio .portfolio-box .portfolio-card .portfolio-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.portfolio .portfolio-box .portfolio-card .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-out;
+}
+.portfolio .portfolio-box .portfolio-card .portfolio-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    display: none;
+    transition: all 0.5s;
+}
+.portfolio .portfolio-box .portfolio-card .portfolio-description hr{
+    width: 50%;
+    margin: 0 auto;
+}
+.portfolio .portfolio-box .portfolio-card .portfolio-description h6 {
+    font-family: var(--ff-title);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--color-light);
+}
+.portfolio .portfolio-box .portfolio-card .portfolio-description p {
+    font-size: 1.2rem;
+}
+.portfolio .portfolio-box .portfolio-card::before,
+.portfolio .portfolio-box .portfolio-card::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    right: 10%;
+}
+.portfolio .portfolio-box .portfolio-card::before {
+    transform: scale(0, 1);
+    border-top: 1px solid var(--color-body);
+    border-bottom: 1px solid var(--color-body);
+    transition: all ease-out 0.5s;
+}
+.portfolio .portfolio-box .portfolio-card::after {
+    transform: scale(1, 0);
+    border-left: 1px solid var(--color-body);
+    border-right: 1px solid var(--color-body);
+    transition: all ease-out 0.5s;
+}
+.portfolio .portfolio-box .portfolio-card:hover .portfolio-img img {
+    opacity: 0.3;
+    transform: scale(1.2);
+}
+.portfolio .portfolio-box .portfolio-card:hover .portfolio-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .portfolio-box .portfolio-card:hover::before {
+    transform: scale(1.15, 1);
+}
+.portfolio .portfolio-box .portfolio-card:hover::after {
+    transform: scale(1, 1.15);
+}
+
+.portfolio input[type=radio] {
+    display: none;
+}
+#portfolio-cat-1:checked ~ .portfolio-box .all,
+#portfolio-cat-2:checked ~ .portfolio-box .design,
+#portfolio-cat-3:checked ~ .portfolio-box .frontend,
+#portfolio-cat-4:checked ~ .portfolio-box .backend,
+#portfolio-cat-5:checked ~ .portfolio-box .fullstack {
+    display: block;
+}
+

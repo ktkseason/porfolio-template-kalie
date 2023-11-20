@@ -1,0 +1,20 @@
+:root {
+    /* Font Family */
+    --ff-title: 'Prompt', sans-serif;
+    --ff-body: 'IBM Plex Serif', serif;
+    
+    /* Font Size */
+    --fs-section-title: 3.6rem;
+    --fs-big-title: 2.6rem;
+    --fs-big-subtitle: 1.6rem;
+    --fs-title: 2.1rem;
+    --fs-body: 1.3rem;
+
+    /* Color */
+    --color-brand: #536078;
+    --color-brand-dark: #4e5a71;
+    --color-shadow: #353d4c;
+    --color-light: #fff;
+    --color-body: #ccc;
+    --color-dark: #999;
+}

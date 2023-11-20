@@ -1,0 +1,22 @@
+.patner-box {
+    background-color: var(--color-brand-dark);
+    border-radius: 5px;
+    position: relative;
+    margin: 5rem 2rem 0 2rem;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.patner-box .img-container {
+    width: 83%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.patner-box .img-container .img-box {
+    width: 25%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

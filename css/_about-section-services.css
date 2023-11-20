@@ -1,0 +1,31 @@
+.service-box {
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.service-box .service {
+    margin-top: 3rem;
+    padding: 0.5rem;
+    width: 25%;
+}
+.service-box .service .img-box {
+    width: 35%;
+    height: 30%;
+    margin: auto;
+}
+.service-box .service img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.service-box .service h3, 
+.service-box .service p {
+    text-align: center;
+    margin-top: 2rem;
+}
+.service-box .service h3 {    
+    text-align: center;
+}

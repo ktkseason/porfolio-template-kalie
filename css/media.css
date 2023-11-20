@@ -1,0 +1,334 @@
+@media (max-width: 1240px) {
+    .service-box .service h3 {
+        font-size: 1.8rem;
+    }
+    .service-box .service {
+        width: 50%;
+    }    
+    .wel-img-box {
+        display: none;
+    }
+    .eec .eec-box {
+        width: 100%;
+    }
+    .contact .contact-box .contact-info br,
+    .contact .contact-box .contact-feedback br {
+        display: block;
+    }
+}
+@media (max-width: 1000px) {
+    label #bar {
+        display: block;
+    }
+    nav {
+        position: fixed;
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 1rem;
+        right: -100%;
+        width: 35%;
+        height: 40vh;
+        padding: 4rem 1rem 4rem 1rem;
+        display: block;
+        background-color: rgba(83, 96, 120, 70%);
+        border: 2px solid var(--color-body);
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px var(--color-shadow);
+        transition: all 0.5s;
+    }
+    nav ul li {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+    label #cancel {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: var(--color-light);
+    }
+    #check:checked ~ ul {
+        top: 1rem;
+        right: 1rem;
+    }
+    #check:checked ~ label #bar {
+        display: none;
+    }
+    .info .my-img-box,
+    .info .my-info-box {
+        width: 100%;
+    }    
+    .my-info-box h2 {
+        margin-top: 2rem;
+    }
+    .skills .skill-box {
+        width: 60%;
+        margin: auto;
+    }
+    .patner-box .img-container .img-box {
+        width: 50%;
+    }
+    .testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card {
+        width: 100%;
+        padding: 2rem;
+    }
+    .testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card:first-child {
+        margin-bottom: 2rem;
+    }
+    .contact .contact-box .contact-info,
+    .contact .contact-box .contact-feedback {
+        width: 100%;
+    }
+    .contact .contact-box .contact-info br,
+    .contact .contact-box .contact-feedback br {
+        display: none;
+    }
+}
+@media (max-width: 875px) {
+    .portfolio ul li {
+        width: 12vw;
+    }
+    .portfolio .portfolio-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .portfolio ul li {
+        width: 13vw;
+    }
+    .portfolio .portfolio-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 620px) {
+    .logo a {
+        font-size: 2rem;
+    }
+    .social-icons {
+        display: none;
+    }
+    .wel-text h2 {
+        font-size: var(--fs-title);;
+    }
+    .wel-text h2 .job-box {
+        margin-left: -3rem;
+        height: 3.2rem;
+    }
+    .wel-text h2 .job {
+        color: var(--color-light);
+    }
+    @keyframes slider {
+        0% {
+            margin-top: -6.4rem; 
+        }
+        10% {
+            margin-top: -3.2rem; 
+        }
+        45% {
+            margin-top: -3.2rem; 
+        }
+        60% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+    .my-info-box h2 {
+        font-size: 2.1rem;
+    }
+    .my-info-box h3 {
+        font-size: 1.6rem;
+    }
+    .my-info-box ul li {
+        font-size: 1.2rem;
+    }
+    .btn {
+        width: 35%;
+    }
+    .service-box .service,
+    .skills .skill-box,
+    .eec .eec-box,
+    .patner-box .img-container .img-box {
+        width: 100%;
+    }
+    .portfolio ul li {
+        font-size: 1.1rem;
+        width: 13vw;
+    }
+    .contact-info-text-box .social-icons {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {    
+    br {
+        display: block;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h2 span.subtitle {
+        font-size: 1rem;
+    }
+    h2.title::after {
+        content: "";
+        background-color: var(--color-dark);
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        margin-top: 2.1rem;
+        margin-left: 1rem;
+    }
+    .py-10 {
+        padding: 5rem 0;
+    }
+    .pt-7 {
+        padding-top: 3rem;
+    }
+    .btn {
+        width: 45%;
+    }
+    .wel-text h2 {
+        font-size: 1.6rem;
+    }
+    .wel-text h2 .job-box {
+        margin-left: -5.5rem;
+        height: 2.4rem;
+    }
+    .wel-text h2 .job {
+        color: var(--color-light);
+    }
+    @keyframes slider {
+        0% {
+            margin-top: -4.8rem; 
+        }
+        10% {
+            margin-top: -2.4rem; 
+        }
+        45% {
+            margin-top: -2.4rem; 
+        }
+        60% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+    .skills  {
+        margin: 2rem 1rem 0 1rem;
+    }
+    .portfolio ul li {
+        font-size: 1.1rem;
+        width: 15vw;
+        margin-right: 0.2rem;
+    }
+    .portfolio ul li:last-child {
+        margin-right: 0;
+    }
+}
+@media (max-height: 560px) {
+    nav ul {
+        min-height: 22rem;
+    }
+    nav ul li a {
+        line-height: 3.5rem;
+    }
+}
+@media (max-width: 450px) {    
+    .testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+    .testimonail-header .testimonial-img-box {
+        width: 100%;
+    }
+    .testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+    .testimonail-header .testimonial-rate-date {
+        width: 100%;
+    }
+    .eec .eec-box .eec-cards .eec-card .eec-period {
+        padding-left: 2rem;
+    }
+    .eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-1 {
+        padding: 3rem 2rem;
+    }
+    .eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-2 {
+        padding: 0.5rem 1rem;
+    }
+    .portfolio ul li {
+        height: 2rem;
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+    }
+    .portfolio .portfolio-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact .contact-box .contact-feedback form {
+        padding: 1.5rem;
+    }
+    .contact .contact-box .contact-info br,
+    .contact .contact-box .contact-feedback br {
+        display: block;
+    }
+    .contact .contact-box .contact-feedback form input:first-child,
+    .contact .contact-box .contact-feedback form input,
+    .contact .contact-box .contact-feedback form .btn {
+        width: 100%;
+    }
+    .contact-info-text-box .social-icons {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .wel-text h2 {
+        font-size: 1.2rem;
+    }
+    .wel-text h2 .job-box {
+        margin-left: -7rem;
+        height: 1.8rem;
+    }
+    .wel-text h2 .job {
+        color: var(--color-light);
+    }
+    @keyframes slider {
+        0% {
+            margin-top: -3.6rem; 
+        }
+        10% {
+            margin-top: -1.8rem; 
+        }
+        45% {
+            margin-top: -1.8rem; 
+        }
+        60% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }    
+    .my-info-box h3 {
+        font-size: 1.2rem;
+    }
+    .eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-1 h4 {
+        font-size: 1.3rem;
+    }
+    .eec .eec-box .eec-cards .eec-card .eec-detail .eec-detail-2 p {
+        font-size: 1.2rem;
+    }
+    .portfolio ul li {
+        margin-right: 0.1rem;
+    }
+    .portfolio ul li:last-child {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,128 @@
+.skills {
+    position: relative;
+    margin: 2rem 5rem 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .skill-box {
+    width: 30%;
+}
+.skills .skill-box h3 {
+    margin: 3rem 0;
+}
+.skills .skill-box .skill {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills .skill-box .skill .bar {
+    background-color: var(--color-dark);
+    border-radius: 1px;
+    width: 50%;
+    height: 5px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills .skill-box .skill .bar div {
+    width: 20%;
+    height: 100%;
+    background-color: var(--color-body);
+    border-radius: 1px;
+}
+.skills .skill-box .skill .bar span {
+    display: inline-block;
+    margin-top: -2rem;
+    font-weight: 700;
+}
+
+/* Team Work */
+.skills .skill-box .skill .bar #team-work-bar {
+    animation: team-work-bar 2s forwards;
+}
+@keyframes team-work-bar {
+    100% {
+        width: 70%;
+    }
+}
+
+/* Creativity */
+.skills .skill-box .skill .bar #creativity-bar {
+    animation: creativity-bar 2s forwards;
+}
+@keyframes creativity-bar {
+    100% {
+        width: 65%;
+    }
+}
+
+/* Communication */
+.skills .skill-box .skill .bar #communication-bar {
+    animation: communication-bar 2s forwards;
+}
+@keyframes communication-bar {
+    100% {
+        width: 80%;
+    }
+}
+
+/* CSS, Bootstrap */
+.skills .skill-box .skill .bar #css-bs-bar {
+    animation: css-bs-bar 2s forwards;
+}
+@keyframes css-bs-bar {
+    100% {
+        width: 75%;
+    }
+}
+
+/* Javascript, React */
+.skills .skill-box .skill .bar #js-react-bar {
+    animation: js-react-bar 2s forwards;
+}
+@keyframes js-react-bar {
+    100% {
+        width: 60%;
+    }
+}
+
+/* PHP, Laravel */
+.skills .skill-box .skill .bar #php-laravel-bar {
+    animation: php-laravel-bar 2s forwards;
+}
+@keyframes php-laravel-bar {
+    100% {
+        width: 80%;
+    }
+}
+
+/* English */
+.skills .skill-box .skill .bar #english-bar {
+    animation: english-bar 2s forwards;
+}
+@keyframes english-bar {
+    100% {
+        width: 90%;
+    }
+}
+
+/* Japanese */
+.skills .skill-box .skill .bar #japanese-bar {
+    animation: japanese-bar 2s forwards;
+}
+@keyframes japanese-bar {
+    100% {
+        width: 80%;
+    }
+}
+
+/* French */
+.skills .skill-box .skill .bar #french-bar {
+    animation: french-bar 2s forwards;
+}
+@keyframes french-bar {
+    100% {
+        width: 50%;
+    }
+}

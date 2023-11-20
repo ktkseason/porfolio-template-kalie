@@ -1,0 +1,52 @@
+.info { 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+    padding: 5rem 2rem 0 2rem;
+}
+.info .my-img-box,
+.info .my-info-box {
+    width: 45%;
+    position: relative;
+}
+.info .my-img-box {
+    background-color: var(--color-brand);
+    border: 1px solid var(--color-body);
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px var(--color-shadow);
+    padding: 1rem;
+}
+.info .my-img-box img {
+    border: 1px solid var(--color-body);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.my-info-box h2, 
+.my-info-box h3,
+.my-info-box p,
+.my-info-box ul {
+    margin-bottom: 2rem;
+}
+.my-info-box h2 {
+    font-family: var(--ff-body);
+    color: var(--color-light);
+    font-weight: 700;
+    text-transform: inherit;
+}
+.my-info-box h3 {
+    color: var(--color-dark);
+    font-weight: 500;
+    font-style: italic;
+}
+.my-info-box ul li {
+    font-family: var(--ff-body);
+    color: var(--color-body);
+    font-size: var(--fs-body);
+    font-weight: 300;
+    line-height: 3rem;
+}
+.my-info-box ul li span {
+    font-weight: 700;
+}

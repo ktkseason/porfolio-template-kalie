@@ -1,0 +1,181 @@
+.testimonial-page-box {
+    margin: 5rem 1rem 0 1rem;
+    max-width: 100%;
+}
+.testimonial-page-box input[type=radio] {
+    display: none;
+}
+#testimonial-page-1:checked ~ .testimonial-box .testimonial-page {
+    margin-left: 0;
+}
+#testimonial-page-2:checked ~ .testimonial-box .testimonial-page {
+    margin-left: -100%;
+}
+#testimonial-page-3:checked ~ .testimonial-box .testimonial-page {
+    margin-left: -200%;
+}
+.testimonial-page-box .testimonial-box {
+    position: relative;
+    overflow: hidden;
+}
+.testimonial-page-box .testimonial-box .testimonial-page {
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box {
+    width: 33.33%;
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card {
+    background-color: var(--color-brand-dark);
+    width: 48%;
+    padding: 3rem;
+    border-radius: 5px;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header {
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-img-box {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-img-box .testimonial-img {
+    border: 1px solid var(--color-body);
+    width: 6rem;
+    height: 6rem;
+    margin: 0.5rem 2.5rem 0 0;
+    border-radius: 5px;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-img-box .testimonial-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: -0.5rem 0 0 0.5rem;
+    border-radius: 5px;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-img-box .testimonial-name {
+    margin-top: 1rem;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-img-box .testimonial-name h6 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-body);
+    font-weight: 500;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-img-box .testimonial-name h6:last-child {
+    font-weight: 300;
+    line-height: 3rem;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-rate {
+    display: flex;
+    justify-content: flex-end;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-rate img {
+    margin: 0.4rem 0.5rem 0 0;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-rate h6, 
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-date h6,
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card p {
+    font-family: var(--ff-body);
+    text-align: justify;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-rate h6, 
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-date h6 {
+    font-size: 1.2rem;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-rate h6 {
+    font-weight: 700;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card 
+.testimonail-header .testimonial-rate-date .testimonial-date h6 {
+    font-weight: 300;
+}
+.testimonial-page-box .testimonial-box .testimonial-page .testimonial-card-box .testimonial-card .testimonial-text {
+    max-height: 60vh;
+    overflow: auto;
+}
+
+.testimonial-page-box .testimonial-control{
+    position: relative;
+    margin: 2rem 0 0 87%;
+    width: 90%;
+    margin: 1rem auto;
+}
+.testimonial-page-box .testimonial-control label.count h6 {
+    margin: 0 1rem 0 0;
+    text-align: right;
+    font-size: var(--fs-body);
+    font-weight: 300;
+    display: none;
+}
+#testimonial-page-1:checked ~ .testimonial-control label.count:nth-child(1) h6,
+#testimonial-page-2:checked ~ .testimonial-control label.count:nth-child(2) h6,
+#testimonial-page-3:checked ~ .testimonial-control label.count:nth-child(3) h6 {
+    display: block;
+}
+.testimonial-page-box .testimonial-control label.arrow {
+    margin-top: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    display: none;
+    transition: all 0.5s;
+}
+.testimonial-page-box .testimonial-control label.arrow:hover {
+    transform: scale(1.5);
+}
+#testimonial-page-1:checked ~ .testimonial-control label.arrow:nth-child(2),
+#testimonial-page-2:checked ~ .testimonial-control label.arrow:nth-child(3),
+#testimonial-page-3:checked ~ .testimonial-control label.arrow:nth-child(1) {
+    background: var(--color-body) url(../img/right.png) no-repeat;
+    background-size: contain;
+    border: 2px solid black;
+    float: right;
+    display: block;
+}
+#testimonial-page-1:checked ~ .testimonial-control label.arrow:nth-last-child(1),
+#testimonial-page-2:checked ~ .testimonial-control label.arrow:nth-last-child(3),
+#testimonial-page-3:checked ~ .testimonial-control label.arrow:nth-last-child(2) {
+    background: var(--color-body) url(../img/left.png) no-repeat;
+    background-size: contain;
+    border: 2px solid black;
+    float: left;
+    display: block;
+}

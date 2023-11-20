@@ -1,0 +1,151 @@
+/* Logo
+==================== */
+.logo {  
+    width: 10vw;
+    line-height: 10vh;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+}
+.logo a {      
+    font-family: var(--ff-title);
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-light);
+}
+
+/* Navbar
+==================== */
+nav {
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--color-brand);
+    border-bottom: 1px solid var(--color-light);
+    display: flex;
+    z-index: 2;
+}
+nav ul {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+nav ul li {
+    width: 10%;
+}
+nav ul li a {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    line-height: 6vh;
+    border: 1px solid var(--color-brand);
+    border-radius: 5px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+/* hover border  */
+nav ul li a:hover {
+    color: var(--color-light);
+    border: 1px solid var(--color-light);
+}
+
+/* hover reflect for border*/
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(204, 204, 204, 30%),
+        transparent
+    );
+    transition: all 0.5s;
+}
+nav ul li a:hover::before {
+    left: 100%;
+}
+/* hover underlined */
+nav ul li a::after {
+    content: "";
+    background-color: var(--color-light);
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+nav ul li:nth-child(4) a::after {
+    left: 17%;
+    width: 66%;
+}
+nav ul li:nth-child(5) a::after {
+    left: 21%;
+    width: 60%;
+}
+nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* Resoponsive nav icons */
+label #bar {
+    position: absolute;
+    line-height: 10vh;
+    right: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    cursor:pointer;
+    display: none;
+}
+#check,
+label #cancel {
+    cursor: pointer;
+    display: none;
+}
+
+/* Social Icons 
+==================== */
+.social-icons {
+    width: 10vw;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.social-icons ul li {
+    background-color: var(--color-body);
+    box-shadow: 1px 2px 3px var(--color-shadow);
+    max-width: 3.5rem;  
+    max-height: 3.5rem;        
+    border-radius: 100%; 
+    margin: 1rem auto;
+    transition: all 0.5s;
+}
+.social-icons ul li a {
+    display: block;
+}
+.social-icons ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social-icons ul li:hover {
+    background-color: var(--color-light);
+    transform: scale(1.5);
+}

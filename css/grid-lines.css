@@ -1,0 +1,35 @@
+.grid-holder {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    z-index: 0;
+}
+.grid-line {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.grid-holder .grid-line:first-child::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 1px;
+}
+.grid-holder .grid-line::after {
+    content: "";
+    background-color: rgba(255, 255, 255,10%);
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 1px;
+}
+/* .grid-holder .grid-line:last-child::after {
+    background-color: var(--color-light);
+} */
